@@ -10,7 +10,7 @@ const ExerciseList = () => {
     useEffect(() => {
         setError(false);
         setLoading(true);
-        axios.get('http://127.0.0.1:5000/')
+        axios.get('https://backend-exercise-tracker-8bci.onrender.com/')
             .then(function (response) {
                 console.log(response.data);
                 setWorkouts(response.data);

@@ -18,7 +18,7 @@ const ExerciseDetails = () => {
         e.preventDefault();
         setLoading(true);
         setError(false);
-        axios.delete(`http://127.0.0.1:5000/exercise/${id}`)
+        axios.delete(`https://backend-exercise-tracker-8bci.onrender.com/exercise/${id}`)
             .then(function (response) {
                 console.log(response);
                 navigateTo('/');
@@ -35,7 +35,7 @@ const ExerciseDetails = () => {
     useEffect(() => {
         setError(false);
         setLoading(true);
-        axios.get(`http://127.0.0.1:5000/exercise/${id}`)
+        axios.get(`https://backend-exercise-tracker-8bci.onrender.com/exercise/${id}`)
             .then(function (response) {
                 console.log(response.data);
                 setWorkouts(response.data);

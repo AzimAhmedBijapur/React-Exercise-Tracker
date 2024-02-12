@@ -15,7 +15,7 @@ const Create = () => {
         e.preventDefault();
         setLoading(true);
         setError(false);
-        axios.post('http://127.0.0.1:5000/add',{
+        axios.post('https://backend-exercise-tracker-8bci.onrender.com/add',{
             date:date,
             duration:dur,
             description:desc
